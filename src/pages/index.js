@@ -18,9 +18,17 @@ const Feature = ({title, description}) => (
       <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='2' d='M5 13l4 4L19 7' />
     </svg>
     <div className='ml-3'>
-      <dt className='text-lg leading-6 font-medium text-gray-900'>{title}</dt>
+      <dt className='text-lg leading-6 font-medium text-gray-800'>{title}</dt>
       <dd className='mt-2 text-base text-gray-500'>{description}</dd>
     </div>
+  </div>
+)
+
+const NessDeployExample = () => (
+  <div className='bg-gray-800 rounded box-border text-sm leading-relaxed mt-8 p-4 shadow-xs text-left'>
+    <pre className='bg-transparent font-mono text-base leading-normal m-0 text-green-400 whitespace-pre-line'>
+      <code className='box-border text-base text-green-400'>$ npx ness deploy</code>
+    </pre>
   </div>
 )
 
@@ -140,19 +148,19 @@ const IndexPage = () => {
                     </div>
                   </div>
                   {/* <div className='hidden md:flex md:space-x-10'>
-                  <a href='#' className='font-medium text-gray-500 hover:text-gray-900'>
+                  <a href='#' className='font-medium text-gray-500 hover:text-gray-800'>
                     Product
                   </a>
 
-                  <a href='#' className='font-medium text-gray-500 hover:text-gray-900'>
+                  <a href='#' className='font-medium text-gray-500 hover:text-gray-800'>
                     Features
                   </a>
 
-                  <a href='#' className='font-medium text-gray-500 hover:text-gray-900'>
+                  <a href='#' className='font-medium text-gray-500 hover:text-gray-800'>
                     Marketplace
                   </a>
 
-                  <a href='#' className='font-medium text-gray-500 hover:text-gray-900'>
+                  <a href='#' className='font-medium text-gray-500 hover:text-gray-800'>
                     Company
                   </a>
                 </div> */}
@@ -161,7 +169,7 @@ const IndexPage = () => {
                       href='https://github.com/nessjs/ness'
                       target='_blank'
                       rel='noreferrer'
-                      className='font-medium flex items-center space-x-1 text-gray-500 hover:text-gray-900'
+                      className='font-medium flex items-center space-x-1 text-gray-500 hover:text-gray-800'
                     >
                       <span>GitHub</span>
 
@@ -227,7 +235,7 @@ const IndexPage = () => {
                   <div className='px-2 pt-2 pb-3 space-y-1' role='none'>
                     <a
                       href='#'
-                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-800 hover:bg-gray-50'
                       role='menuitem'
                     >
                       Product
@@ -235,7 +243,7 @@ const IndexPage = () => {
 
                     <a
                       href='#'
-                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-800 hover:bg-gray-50'
                       role='menuitem'
                     >
                       Features
@@ -243,7 +251,7 @@ const IndexPage = () => {
 
                     <a
                       href='#'
-                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-800 hover:bg-gray-50'
                       role='menuitem'
                     >
                       Marketplace
@@ -251,7 +259,7 @@ const IndexPage = () => {
 
                     <a
                       href='#'
-                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50'
+                      className='block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-800 hover:bg-gray-50'
                       role='menuitem'
                     >
                       Company
@@ -272,7 +280,7 @@ const IndexPage = () => {
 
               <div className='mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6'>
                 <div className='text-center'>
-                  <h1 className='text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl'>
+                  <h1 className='text-4xl tracking-tight font-extrabold text-gray-800 sm:text-5xl md:text-6xl'>
                     <span className='block'>Deploy static sites</span>
                     <span className='block text-brand'>to your AWS account</span>
                   </h1>
@@ -281,6 +289,10 @@ const IndexPage = () => {
                     <br />
                     No third-party accounts required and no scaling limitations.
                   </p>
+
+                  <div className='max-w-md mx-auto'>
+                    <NessDeployExample />
+                  </div>
                 </div>
               </div>
             </div>
@@ -307,7 +319,7 @@ const IndexPage = () => {
                 <h2 className='text-base font-semibold text-brand uppercase tracking-wide'>
                   Deploys made easy
                 </h2>
-                <p className='mt-2 text-3xl font-extrabold text-gray-900'>
+                <p className='mt-2 text-3xl font-extrabold text-gray-800'>
                   No configuration required
                 </p>
                 <p className='mt-4 text-lg text-gray-500'>
@@ -354,6 +366,21 @@ const IndexPage = () => {
             </div>
           </div>
 
+          <div className='bg-brand'>
+            <div className='max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8'>
+              <h2 className='text-3xl font-extrabold text-white sm:text-4xl'>
+                <span className='block'>Boost your productivity.</span>
+                <span className='block'>Start using the Ness CLI today.</span>
+              </h2>
+              <p className='mt-4 text-lg leading-6 text-gray-200'>
+                It's as simple as building your static site and running a single command in your
+                project's root directory.
+              </p>
+
+              <NessDeployExample />
+            </div>
+          </div>
+
           <section className='py-12 bg-gray-50 overflow-hidden md:py-20 lg:py-24'>
             <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
               <svg
@@ -391,7 +418,7 @@ const IndexPage = () => {
               <div className='relative'>
                 <img className='mx-auto h-8' src={aws} alt='AWS' />
                 <blockquote className='mt-10'>
-                  <div className='max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-900'>
+                  <div className='max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-800'>
                     <p>&ldquo;Will probably have some time next week [to try it out]&rdquo;</p>
                   </div>
                   <footer className='mt-8'>
@@ -404,7 +431,7 @@ const IndexPage = () => {
                         />
                       </div>
                       <div className='mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center'>
-                        <div className='text-base font-medium text-gray-900'>Elad Ben-Israel</div>
+                        <div className='text-base font-medium text-gray-800'>Elad Ben-Israel</div>
 
                         <svg
                           className='hidden md:block mx-1 h-5 w-5 text-brand'
