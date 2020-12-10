@@ -485,7 +485,7 @@ const IndexPage = ({data}) => {
               href='https://twitter.com/aeduhm'
               target='_blank'
               rel='noreferrer'
-              className='text-gray-400 hover:text-gray-500'
+              className='text-gray-500 hover:text-gray-600'
             >
               <span className='sr-only'>Twitter</span>
               <svg className='h-6 w-6' fill='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
@@ -497,7 +497,7 @@ const IndexPage = ({data}) => {
               href='https://github.com/nessjs/ness'
               target='_blank'
               rel='noreferrer'
-              className='text-gray-400 hover:text-gray-500'
+              className='text-gray-500 hover:text-gray-600'
             >
               <span className='sr-only'>GitHub</span>
               <svg className='h-6 w-6' fill='currentColor' viewBox='0 0 24 24' aria-hidden='true'>
@@ -521,7 +521,7 @@ const IndexPage = ({data}) => {
       </a> */}
           </div>
           <div className='mt-8 md:mt-0 md:order-1'>
-            <p className='text-center text-base text-gray-400'>
+            <p className='text-center text-base text-gray-500'>
               &copy; 2020 NessJS. All rights reserved.
             </p>
           </div>
