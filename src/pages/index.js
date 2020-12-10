@@ -352,7 +352,7 @@ const IndexPage = ({data}) => {
                     description='Best practice security headers served with every page'
                   />
                   <Feature
-                    title='CLI friendly'
+                    title='CI friendly'
                     description='Add ness to your CI/CD pipeline to keep your site up-to-date, effortlessly'
                   />
                   <Feature
