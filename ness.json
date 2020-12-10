@@ -3,5 +3,5 @@
   "prod": false,
   "domain": "ness.sh",
   "redirectWww": true,
-  "csp": "default-src 'none'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; object-src 'none'; connect-src 'self'; manifest-src 'self'"
+  "csp": "default-src 'none'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; object-src 'none'; connect-src 'self' https://www.google-analytics.com/; manifest-src 'self'"
 }
