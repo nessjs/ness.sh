@@ -1,24 +1,26 @@
 {
   "name": "ness-sh",
   "version": "1.0.0",
-  "private": true,
-  "description": "My Gatsby site",
+  "description": "✪ No-effort static sites deployed to your AWS account.",
   "author": "Adam Elmore",
   "keywords": [
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
-  "license": "0BSD",
+  "license": "MIT",
   "dependencies": {
+    "autoprefixer": "^10.1.0",
     "gatsby": "^2.26.1",
-    "gatsby-plugin-google-analytics": "^2.7.0",
+    "gatsby-plugin-canonical-urls": "^2.6.0",
+    "gatsby-plugin-google-gtag": "^2.4.0",
     "gatsby-plugin-image": "^0.3.1",
+    "gatsby-plugin-manifest": "^2.8.0",
     "gatsby-plugin-postcss": "^3.3.0",
     "gatsby-plugin-react-helmet": "^3.6.0",
     "gatsby-plugin-sharp": "^2.10.1",
@@ -28,6 +30,7 @@
     "postcss": "^8.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "^2.0.1"
   }
 }
