@@ -538,7 +538,7 @@ export const query = graphql`
     deployImage: file(relativePath: {eq: "ness-deploy.png"}) {
       childImageSharp {
         fluid(maxWidth: 1248, maxHeight: 614) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
@@ -546,7 +546,7 @@ export const query = graphql`
     avatarImage: file(relativePath: {eq: "eladb.jpeg"}) {
       childImageSharp {
         fluid(maxWidth: 50, maxHeight: 50) {
-          ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
