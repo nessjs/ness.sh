@@ -5,7 +5,7 @@ module.exports = {
     description:
       'Ness is a CLI tool that makes it easy to deploy static sites to your AWS account.',
     url: 'https://ness.sh',
-    image: '/images/ness-mark.png', // Path to your image you placed in the 'static' folder
+    image: '/images/ness-banner.png',
     twitterUsername: '@aeduhm',
   },
   plugins: [
