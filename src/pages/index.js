@@ -471,7 +471,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    deployImage: file(relativePath: {eq: "ness-deploy-light.png"}) {
+    deployImage: file(relativePath: {eq: "ness-deploy.png"}) {
       childImageSharp {
         fluid(maxWidth: 1250) {
           ...GatsbyImageSharpFluid_withWebp
