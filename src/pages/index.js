@@ -12,7 +12,7 @@ import {DarkToggle, ThemeProvider} from '../components/theme'
 const Feature = ({title, description}) => (
   <div className='flex'>
     <svg
-      className='flex-shrink-0 h-6 w-6 text-green-500'
+      className='flex-shrink-0 h-6 w-6 text-brand dark:text-secondary'
       xmlns='http://www.w3.org/2000/svg'
       fill='none'
       viewBox='0 0 24 24'
@@ -30,8 +30,8 @@ const Feature = ({title, description}) => (
 
 const NessDeployExample = () => (
   <div className='bg-gray-800 dark:bg-gray-700 rounded box-border text-sm leading-relaxed mt-8 p-4 shadow-xs text-left'>
-    <pre className='bg-transparent font-mono text-base leading-normal m-0 text-green-400 whitespace-pre-line'>
-      <code className='box-border text-base text-green-400'>$ npx ness deploy</code>
+    <pre className='bg-transparent font-mono text-base leading-normal m-0 text-secondary whitespace-pre-line'>
+      <code className='box-border text-base'>&gt; npx ness deploy</code>
     </pre>
   </div>
 )
@@ -471,9 +471,9 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    deployImage: file(relativePath: {eq: "ness-deploy.png"}) {
+    deployImage: file(relativePath: {eq: "ness-deploy-light.png"}) {
       childImageSharp {
-        fluid(maxWidth: 1248, maxHeight: 614) {
+        fluid(maxWidth: 1250) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
