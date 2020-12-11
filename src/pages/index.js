@@ -30,8 +30,8 @@ const Feature = ({title, description}) => (
 
 const NessDeployExample = () => (
   <div className='bg-gray-800 dark:bg-gray-700 rounded box-border text-sm leading-relaxed mt-8 p-4 shadow-xs text-left'>
-    <pre className='bg-transparent font-mono text-base leading-normal m-0 text-secondary whitespace-pre-line'>
-      <code className='box-border text-base'>&gt; npx ness deploy</code>
+    <pre className='bg-transparent font-mono text-base leading-normal m-0 text-gray-200 whitespace-pre-line'>
+      <code className='box-border text-base'>$ npx ness deploy</code>
     </pre>
   </div>
 )
@@ -155,7 +155,7 @@ const Header = () => (
                     Company
                   </a>
                 </div> */}
-      <div className='p-3 space-x-4 bg-gray-50 dark:bg-gray-800 md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0'>
+      <div className='p-3 space-x-4 bg-gray-50 dark:bg-gray-800 absolute flex items-center justify-end inset-y-0 right-0'>
         <DarkToggle />
         <a
           href='https://github.com/nessjs/ness'
@@ -193,9 +193,7 @@ const Hero = ({data}) => (
             <span className='block text-brand dark:text-secondary'>to your AWS account</span>
           </h1>
           <p className='mt-3 max-w-md mx-auto text-base text-gray-500 dark:text-gray-400 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl'>
-            Ness is a CLI tool for effortlessly deploying web sites to your AWS account.
-            <br />
-            No third-party accounts required and no scaling limitations.
+            No sign-ups, paywalls or scaling limitations.
           </p>
 
           <div className='max-w-md mx-auto'>
@@ -267,7 +265,7 @@ const Features = () => (
             description='Add ness to your CI/CD pipeline to keep your site up-to-date, effortlessly'
           />
           <Feature
-            title='No third-party accounts necessary'
+            title='No third-party accounts'
             description='Ness deploys to your AWS account: no sign-ups and no scaling limitations'
           />
           <Feature
@@ -343,7 +341,7 @@ const Quotes = ({data}) => (
             <div className='md:flex md:items-center md:justify-center'>
               <div className='md:flex-shrink-0'>
                 <Img
-                  className='mx-auto h-10 w-10 rounded-full'
+                  className='mx-auto h-14 w-14 md:h-10 md:w-10 rounded-full'
                   fluid={data.avatarImage.childImageSharp.fluid}
                   alt='Elad Ben-Israel'
                 />
@@ -362,7 +360,7 @@ const Quotes = ({data}) => (
                 </svg>
 
                 <div className='text-base font-medium text-gray-500 dark:text-gray-400'>
-                  Principal Engineer, Amazon Web Services
+                  Principal Engineer, AWS
                 </div>
               </div>
             </div>
@@ -481,7 +479,7 @@ export const query = graphql`
 
     avatarImage: file(relativePath: {eq: "eladb.jpeg"}) {
       childImageSharp {
-        fluid(maxWidth: 50, maxHeight: 50) {
+        fluid(maxWidth: 60, maxHeight: 60) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
