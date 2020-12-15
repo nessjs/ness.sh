@@ -1,7 +1,8 @@
 {
-  "dir": "public",
-  "prod": false,
-  "domain": "ness.sh",
   "redirectWww": true,
-  "csp": "default-src 'none'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; object-src 'none'; connect-src 'self' https://www.google-analytics.com/; manifest-src 'self'"
+  "spa": true,
+  "dir": "public",
+  "domain": "ness.sh",
+  "csp": "default-src 'none'; img-src 'self' data:; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; object-src 'none'; connect-src 'self' https://www.google-analytics.com/; manifest-src 'self'",
+  "errorDocument": "404.html"
 }
