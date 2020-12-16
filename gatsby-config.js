@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Ness',
-    titleTemplate: '%s · No-effort static sites deployed to your AWS account',
-    description:
-      'Ness is a CLI tool that makes it easy to deploy static sites to your AWS account.',
+    titleTemplate: '%s · Deploy web sites to your AWS account effortlessly',
+    description: 'Ness is a CLI tool that makes it easy to deploy web sites to your AWS account.',
     siteUrl: 'https://ness.sh',
     image: '/images/ness-banner.png',
     twitterUsername: '@aeduhm',
@@ -37,13 +36,35 @@ module.exports = {
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#006880',
-        icon: 'src/images/ness-mark.png',
+        icon: 'static/images/ness-mark.png',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: './src/images/',
+        name: 'images',
+        path: `${__dirname}/static/images/`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'posts',
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-reading-time`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
       },
     },
   ],

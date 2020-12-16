@@ -1,7 +1,7 @@
 import * as React from 'react'
 import SEO from '../components/seo'
 
-import logo from '../images/ness.svg'
+import logo from '../../static/images/ness.svg'
 
 const IndexPage = () => {
   return (
