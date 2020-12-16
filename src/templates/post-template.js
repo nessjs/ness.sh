@@ -21,7 +21,7 @@ export default function Template({
       <main>
         <SEO
           title={frontmatter.title}
-          image={frontmatter.image ? `images/${frontmatter.image.relativePath}` : undefined}
+          image={frontmatter.image ? `/images/${frontmatter.image.relativePath}` : undefined}
         />
         <div className='bg-gray-50 dark:bg-gray-800'>
           <Header />
