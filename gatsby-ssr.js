@@ -1,4 +1,5 @@
 import React from 'react'
+import {ThemeProvider} from './src/components/theme'
 
 const MagicScriptTag = () => {
   let codeToRunOnClient = `
@@ -37,3 +38,5 @@ const MagicScriptTag = () => {
 export const onRenderBody = ({setPreBodyComponents}) => {
   setPreBodyComponents(<MagicScriptTag />)
 }
+
+export const wrapRootElement = ({element}) => <ThemeProvider>{element}</ThemeProvider>
