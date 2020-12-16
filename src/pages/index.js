@@ -254,7 +254,9 @@ const Quotes = ({data}) => (
         <img className='hidden mx-auto h-8 dark:block' src={awsWhite} alt='Amazon Web Services' />
         <blockquote className='mt-10'>
           <div className='max-w-3xl mx-auto text-center text-2xl leading-9 font-medium text-gray-800 dark:text-gray-200'>
-            <p>&ldquo;Will probably have some time next week [to try it out]&rdquo;</p>
+            <p>
+              &ldquo;Played around with ness and I love it ❤️ The experience is very slick!&rdquo;
+            </p>
           </div>
           <footer className='mt-8'>
             <div className='md:flex md:items-center md:justify-center'>
