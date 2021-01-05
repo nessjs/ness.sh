@@ -67,7 +67,7 @@ export const Footer = () => (
       </div>
       <div className='mt-8 md:mt-0 md:order-1'>
         <p className='text-center text-base text-gray-500 dark:text-gray-400'>
-          &copy; 2020 NessJS. All rights reserved.
+          &copy; 2021 NessJS. All rights reserved.
         </p>
       </div>
     </div>
