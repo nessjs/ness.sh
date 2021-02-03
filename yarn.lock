@@ -6229,9 +6229,9 @@ gatsby-plugin-canonical-urls@^2.6.0:
     "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-google-gtag@^2.4.0:
-  version "2.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.4.0.tgz#b805e9c625765549a7d878cbb8a34100f2689eed"
-  integrity sha512-0Dm+P8pTxLApZdCEN4XoSgQRyqBgAyt+hn4CJVLAHesK3OMAFM/tABkRNS4CYKQKpFFzS4QgKtQhmopcUpcBBQ==
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-google-gtag/-/gatsby-plugin-google-gtag-2.8.0.tgz#234dc936dd32440f861a3c0308521864ae55c5aa"
+  integrity sha512-ghvVjbcDszlt7/oaHvmx97WVceWbbMZQ7b6FSO4RY0FVUm/UkvrZldAxraioS1uEra+ndeEDyPM+MiftuDR8Aw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     minimatch "^3.0.4"
